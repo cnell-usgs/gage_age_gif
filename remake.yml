@@ -1,0 +1,41 @@
+target_default: gage_age_gif
+
+packages:
+  - tidyverse
+  - reshape2
+  - sp
+  - sf
+  - patchwork
+  - scico
+  - remake
+  - magick
+  - showtext
+  
+sources:
+  - src/data_utils.R
+  - src/plot_utils.R
+  
+targets:
+  gage_age_gif:
+    depends:
+      - twitter/gage_age.gif
+      
+  gage_melt:
+    command: unravel_data(gage_data = "data/active_flow_gages_summary_wy.rds")
+    
+  gage_years:
+    command: seq(I(1940), I(2019))
+    
+  frame_task_plan:
+    command: create_frame_plan(gage_years, gage_melt)
+    
+  frame_tasks.yml:
+    command: create_task_makefile(
+      task_plan = frame_task_plan, 
+      makefile = target_name, 
+      include = I("remake.yml"),
+      final_targets = I("twitter/gage_age.gif"),
+      finalize_funs = I('combine_frames'))
+      
+  twitter/gage_age.gif:
+    command: scmake(I("gage_age.gif_promise"), remake_file = "frame_tasks.yml")
