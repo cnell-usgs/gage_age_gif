@@ -1,6 +1,6 @@
 # Do not edit - automatically generated
 # from the task_makefile.mustache template
-# by create_task_makefile() via eval()
+# by create_task_makefile() via create_gif_frames()
 # using scipiper package version 0.0.20
 
 target_default: frame_tasks
@@ -11,418 +11,661 @@ include:
 packages:
   - scipiper
 
+sources:
+  - src/data_utils.R
+
 file_extensions:
   - "ind"
 
 targets:
   frame_tasks:
     depends:
-      - gage_age.gif_promise
+      - hash_table
+
+  # --- 1900 --- #
+  
+  twitter/gage_age_1900.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1900)
+
+  # --- 1901 --- #
+  
+  twitter/gage_age_1901.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1901)
+
+  # --- 1902 --- #
+  
+  twitter/gage_age_1902.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1902)
+
+  # --- 1903 --- #
+  
+  twitter/gage_age_1903.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1903)
+
+  # --- 1904 --- #
+  
+  twitter/gage_age_1904.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1904)
+
+  # --- 1905 --- #
+  
+  twitter/gage_age_1905.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1905)
+
+  # --- 1906 --- #
+  
+  twitter/gage_age_1906.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1906)
+
+  # --- 1907 --- #
+  
+  twitter/gage_age_1907.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1907)
+
+  # --- 1908 --- #
+  
+  twitter/gage_age_1908.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1908)
+
+  # --- 1909 --- #
+  
+  twitter/gage_age_1909.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1909)
+
+  # --- 1910 --- #
+  
+  twitter/gage_age_1910.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1910)
+
+  # --- 1911 --- #
+  
+  twitter/gage_age_1911.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1911)
+
+  # --- 1912 --- #
+  
+  twitter/gage_age_1912.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1912)
+
+  # --- 1913 --- #
+  
+  twitter/gage_age_1913.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1913)
+
+  # --- 1914 --- #
+  
+  twitter/gage_age_1914.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1914)
+
+  # --- 1915 --- #
+  
+  twitter/gage_age_1915.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1915)
+
+  # --- 1916 --- #
+  
+  twitter/gage_age_1916.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1916)
+
+  # --- 1917 --- #
+  
+  twitter/gage_age_1917.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1917)
+
+  # --- 1918 --- #
+  
+  twitter/gage_age_1918.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1918)
+
+  # --- 1919 --- #
+  
+  twitter/gage_age_1919.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1919)
+
+  # --- 1920 --- #
+  
+  twitter/gage_age_1920.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1920)
+
+  # --- 1921 --- #
+  
+  twitter/gage_age_1921.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1921)
+
+  # --- 1922 --- #
+  
+  twitter/gage_age_1922.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1922)
+
+  # --- 1923 --- #
+  
+  twitter/gage_age_1923.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1923)
+
+  # --- 1924 --- #
+  
+  twitter/gage_age_1924.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1924)
+
+  # --- 1925 --- #
+  
+  twitter/gage_age_1925.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1925)
+
+  # --- 1926 --- #
+  
+  twitter/gage_age_1926.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1926)
+
+  # --- 1927 --- #
+  
+  twitter/gage_age_1927.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1927)
+
+  # --- 1928 --- #
+  
+  twitter/gage_age_1928.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1928)
+
+  # --- 1929 --- #
+  
+  twitter/gage_age_1929.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1929)
+
+  # --- 1930 --- #
+  
+  twitter/gage_age_1930.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1930)
+
+  # --- 1931 --- #
+  
+  twitter/gage_age_1931.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1931)
+
+  # --- 1932 --- #
+  
+  twitter/gage_age_1932.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1932)
+
+  # --- 1933 --- #
+  
+  twitter/gage_age_1933.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1933)
+
+  # --- 1934 --- #
+  
+  twitter/gage_age_1934.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1934)
+
+  # --- 1935 --- #
+  
+  twitter/gage_age_1935.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1935)
+
+  # --- 1936 --- #
+  
+  twitter/gage_age_1936.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1936)
+
+  # --- 1937 --- #
+  
+  twitter/gage_age_1937.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1937)
+
+  # --- 1938 --- #
+  
+  twitter/gage_age_1938.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1938)
+
+  # --- 1939 --- #
+  
+  twitter/gage_age_1939.png:
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1939)
 
   # --- 1940 --- #
   
   twitter/gage_age_1940.png:
-    command: plot_sites(target_name, gage_melt, yr = 1940)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1940)
 
   # --- 1941 --- #
   
   twitter/gage_age_1941.png:
-    command: plot_sites(target_name, gage_melt, yr = 1941)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1941)
 
   # --- 1942 --- #
   
   twitter/gage_age_1942.png:
-    command: plot_sites(target_name, gage_melt, yr = 1942)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1942)
 
   # --- 1943 --- #
   
   twitter/gage_age_1943.png:
-    command: plot_sites(target_name, gage_melt, yr = 1943)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1943)
 
   # --- 1944 --- #
   
   twitter/gage_age_1944.png:
-    command: plot_sites(target_name, gage_melt, yr = 1944)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1944)
 
   # --- 1945 --- #
   
   twitter/gage_age_1945.png:
-    command: plot_sites(target_name, gage_melt, yr = 1945)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1945)
 
   # --- 1946 --- #
   
   twitter/gage_age_1946.png:
-    command: plot_sites(target_name, gage_melt, yr = 1946)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1946)
 
   # --- 1947 --- #
   
   twitter/gage_age_1947.png:
-    command: plot_sites(target_name, gage_melt, yr = 1947)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1947)
 
   # --- 1948 --- #
   
   twitter/gage_age_1948.png:
-    command: plot_sites(target_name, gage_melt, yr = 1948)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1948)
 
   # --- 1949 --- #
   
   twitter/gage_age_1949.png:
-    command: plot_sites(target_name, gage_melt, yr = 1949)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1949)
 
   # --- 1950 --- #
   
   twitter/gage_age_1950.png:
-    command: plot_sites(target_name, gage_melt, yr = 1950)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1950)
 
   # --- 1951 --- #
   
   twitter/gage_age_1951.png:
-    command: plot_sites(target_name, gage_melt, yr = 1951)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1951)
 
   # --- 1952 --- #
   
   twitter/gage_age_1952.png:
-    command: plot_sites(target_name, gage_melt, yr = 1952)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1952)
 
   # --- 1953 --- #
   
   twitter/gage_age_1953.png:
-    command: plot_sites(target_name, gage_melt, yr = 1953)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1953)
 
   # --- 1954 --- #
   
   twitter/gage_age_1954.png:
-    command: plot_sites(target_name, gage_melt, yr = 1954)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1954)
 
   # --- 1955 --- #
   
   twitter/gage_age_1955.png:
-    command: plot_sites(target_name, gage_melt, yr = 1955)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1955)
 
   # --- 1956 --- #
   
   twitter/gage_age_1956.png:
-    command: plot_sites(target_name, gage_melt, yr = 1956)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1956)
 
   # --- 1957 --- #
   
   twitter/gage_age_1957.png:
-    command: plot_sites(target_name, gage_melt, yr = 1957)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1957)
 
   # --- 1958 --- #
   
   twitter/gage_age_1958.png:
-    command: plot_sites(target_name, gage_melt, yr = 1958)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1958)
 
   # --- 1959 --- #
   
   twitter/gage_age_1959.png:
-    command: plot_sites(target_name, gage_melt, yr = 1959)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1959)
 
   # --- 1960 --- #
   
   twitter/gage_age_1960.png:
-    command: plot_sites(target_name, gage_melt, yr = 1960)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1960)
 
   # --- 1961 --- #
   
   twitter/gage_age_1961.png:
-    command: plot_sites(target_name, gage_melt, yr = 1961)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1961)
 
   # --- 1962 --- #
   
   twitter/gage_age_1962.png:
-    command: plot_sites(target_name, gage_melt, yr = 1962)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1962)
 
   # --- 1963 --- #
   
   twitter/gage_age_1963.png:
-    command: plot_sites(target_name, gage_melt, yr = 1963)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1963)
 
   # --- 1964 --- #
   
   twitter/gage_age_1964.png:
-    command: plot_sites(target_name, gage_melt, yr = 1964)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1964)
 
   # --- 1965 --- #
   
   twitter/gage_age_1965.png:
-    command: plot_sites(target_name, gage_melt, yr = 1965)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1965)
 
   # --- 1966 --- #
   
   twitter/gage_age_1966.png:
-    command: plot_sites(target_name, gage_melt, yr = 1966)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1966)
 
   # --- 1967 --- #
   
   twitter/gage_age_1967.png:
-    command: plot_sites(target_name, gage_melt, yr = 1967)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1967)
 
   # --- 1968 --- #
   
   twitter/gage_age_1968.png:
-    command: plot_sites(target_name, gage_melt, yr = 1968)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1968)
 
   # --- 1969 --- #
   
   twitter/gage_age_1969.png:
-    command: plot_sites(target_name, gage_melt, yr = 1969)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1969)
 
   # --- 1970 --- #
   
   twitter/gage_age_1970.png:
-    command: plot_sites(target_name, gage_melt, yr = 1970)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1970)
 
   # --- 1971 --- #
   
   twitter/gage_age_1971.png:
-    command: plot_sites(target_name, gage_melt, yr = 1971)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1971)
 
   # --- 1972 --- #
   
   twitter/gage_age_1972.png:
-    command: plot_sites(target_name, gage_melt, yr = 1972)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1972)
 
   # --- 1973 --- #
   
   twitter/gage_age_1973.png:
-    command: plot_sites(target_name, gage_melt, yr = 1973)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1973)
 
   # --- 1974 --- #
   
   twitter/gage_age_1974.png:
-    command: plot_sites(target_name, gage_melt, yr = 1974)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1974)
 
   # --- 1975 --- #
   
   twitter/gage_age_1975.png:
-    command: plot_sites(target_name, gage_melt, yr = 1975)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1975)
 
   # --- 1976 --- #
   
   twitter/gage_age_1976.png:
-    command: plot_sites(target_name, gage_melt, yr = 1976)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1976)
 
   # --- 1977 --- #
   
   twitter/gage_age_1977.png:
-    command: plot_sites(target_name, gage_melt, yr = 1977)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1977)
 
   # --- 1978 --- #
   
   twitter/gage_age_1978.png:
-    command: plot_sites(target_name, gage_melt, yr = 1978)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1978)
 
   # --- 1979 --- #
   
   twitter/gage_age_1979.png:
-    command: plot_sites(target_name, gage_melt, yr = 1979)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1979)
 
   # --- 1980 --- #
   
   twitter/gage_age_1980.png:
-    command: plot_sites(target_name, gage_melt, yr = 1980)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1980)
 
   # --- 1981 --- #
   
   twitter/gage_age_1981.png:
-    command: plot_sites(target_name, gage_melt, yr = 1981)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1981)
 
   # --- 1982 --- #
   
   twitter/gage_age_1982.png:
-    command: plot_sites(target_name, gage_melt, yr = 1982)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1982)
 
   # --- 1983 --- #
   
   twitter/gage_age_1983.png:
-    command: plot_sites(target_name, gage_melt, yr = 1983)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1983)
 
   # --- 1984 --- #
   
   twitter/gage_age_1984.png:
-    command: plot_sites(target_name, gage_melt, yr = 1984)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1984)
 
   # --- 1985 --- #
   
   twitter/gage_age_1985.png:
-    command: plot_sites(target_name, gage_melt, yr = 1985)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1985)
 
   # --- 1986 --- #
   
   twitter/gage_age_1986.png:
-    command: plot_sites(target_name, gage_melt, yr = 1986)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1986)
 
   # --- 1987 --- #
   
   twitter/gage_age_1987.png:
-    command: plot_sites(target_name, gage_melt, yr = 1987)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1987)
 
   # --- 1988 --- #
   
   twitter/gage_age_1988.png:
-    command: plot_sites(target_name, gage_melt, yr = 1988)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1988)
 
   # --- 1989 --- #
   
   twitter/gage_age_1989.png:
-    command: plot_sites(target_name, gage_melt, yr = 1989)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1989)
 
   # --- 1990 --- #
   
   twitter/gage_age_1990.png:
-    command: plot_sites(target_name, gage_melt, yr = 1990)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1990)
 
   # --- 1991 --- #
   
   twitter/gage_age_1991.png:
-    command: plot_sites(target_name, gage_melt, yr = 1991)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1991)
 
   # --- 1992 --- #
   
   twitter/gage_age_1992.png:
-    command: plot_sites(target_name, gage_melt, yr = 1992)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1992)
 
   # --- 1993 --- #
   
   twitter/gage_age_1993.png:
-    command: plot_sites(target_name, gage_melt, yr = 1993)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1993)
 
   # --- 1994 --- #
   
   twitter/gage_age_1994.png:
-    command: plot_sites(target_name, gage_melt, yr = 1994)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1994)
 
   # --- 1995 --- #
   
   twitter/gage_age_1995.png:
-    command: plot_sites(target_name, gage_melt, yr = 1995)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1995)
 
   # --- 1996 --- #
   
   twitter/gage_age_1996.png:
-    command: plot_sites(target_name, gage_melt, yr = 1996)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1996)
 
   # --- 1997 --- #
   
   twitter/gage_age_1997.png:
-    command: plot_sites(target_name, gage_melt, yr = 1997)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1997)
 
   # --- 1998 --- #
   
   twitter/gage_age_1998.png:
-    command: plot_sites(target_name, gage_melt, yr = 1998)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1998)
 
   # --- 1999 --- #
   
   twitter/gage_age_1999.png:
-    command: plot_sites(target_name, gage_melt, yr = 1999)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 1999)
 
   # --- 2000 --- #
   
   twitter/gage_age_2000.png:
-    command: plot_sites(target_name, gage_melt, yr = 2000)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2000)
 
   # --- 2001 --- #
   
   twitter/gage_age_2001.png:
-    command: plot_sites(target_name, gage_melt, yr = 2001)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2001)
 
   # --- 2002 --- #
   
   twitter/gage_age_2002.png:
-    command: plot_sites(target_name, gage_melt, yr = 2002)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2002)
 
   # --- 2003 --- #
   
   twitter/gage_age_2003.png:
-    command: plot_sites(target_name, gage_melt, yr = 2003)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2003)
 
   # --- 2004 --- #
   
   twitter/gage_age_2004.png:
-    command: plot_sites(target_name, gage_melt, yr = 2004)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2004)
 
   # --- 2005 --- #
   
   twitter/gage_age_2005.png:
-    command: plot_sites(target_name, gage_melt, yr = 2005)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2005)
 
   # --- 2006 --- #
   
   twitter/gage_age_2006.png:
-    command: plot_sites(target_name, gage_melt, yr = 2006)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2006)
 
   # --- 2007 --- #
   
   twitter/gage_age_2007.png:
-    command: plot_sites(target_name, gage_melt, yr = 2007)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2007)
 
   # --- 2008 --- #
   
   twitter/gage_age_2008.png:
-    command: plot_sites(target_name, gage_melt, yr = 2008)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2008)
 
   # --- 2009 --- #
   
   twitter/gage_age_2009.png:
-    command: plot_sites(target_name, gage_melt, yr = 2009)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2009)
 
   # --- 2010 --- #
   
   twitter/gage_age_2010.png:
-    command: plot_sites(target_name, gage_melt, yr = 2010)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2010)
 
   # --- 2011 --- #
   
   twitter/gage_age_2011.png:
-    command: plot_sites(target_name, gage_melt, yr = 2011)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2011)
 
   # --- 2012 --- #
   
   twitter/gage_age_2012.png:
-    command: plot_sites(target_name, gage_melt, yr = 2012)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2012)
 
   # --- 2013 --- #
   
   twitter/gage_age_2013.png:
-    command: plot_sites(target_name, gage_melt, yr = 2013)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2013)
 
   # --- 2014 --- #
   
   twitter/gage_age_2014.png:
-    command: plot_sites(target_name, gage_melt, yr = 2014)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2014)
 
   # --- 2015 --- #
   
   twitter/gage_age_2015.png:
-    command: plot_sites(target_name, gage_melt, yr = 2015)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2015)
 
   # --- 2016 --- #
   
   twitter/gage_age_2016.png:
-    command: plot_sites(target_name, gage_melt, yr = 2016)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2016)
 
   # --- 2017 --- #
   
   twitter/gage_age_2017.png:
-    command: plot_sites(target_name, gage_melt, yr = 2017)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2017)
 
   # --- 2018 --- #
   
   twitter/gage_age_2018.png:
-    command: plot_sites(target_name, gage_melt, yr = 2018)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2018)
 
   # --- 2019 --- #
   
   twitter/gage_age_2019.png:
-    command: plot_sites(target_name, gage_melt, yr = 2019)
+    command: plot_sites(target_name, gage_melt, state_map = state_map, yr = 2019)
 
   # --- Overall job --- #
 
-  gage_age.gif_promise:
-    command: combine_frames(I('twitter/gage_age.gif'),
+  hash_table:
+    command: tibble_hash_frames(
+      'twitter/gage_age_1900.png',
+      'twitter/gage_age_1901.png',
+      'twitter/gage_age_1902.png',
+      'twitter/gage_age_1903.png',
+      'twitter/gage_age_1904.png',
+      'twitter/gage_age_1905.png',
+      'twitter/gage_age_1906.png',
+      'twitter/gage_age_1907.png',
+      'twitter/gage_age_1908.png',
+      'twitter/gage_age_1909.png',
+      'twitter/gage_age_1910.png',
+      'twitter/gage_age_1911.png',
+      'twitter/gage_age_1912.png',
+      'twitter/gage_age_1913.png',
+      'twitter/gage_age_1914.png',
+      'twitter/gage_age_1915.png',
+      'twitter/gage_age_1916.png',
+      'twitter/gage_age_1917.png',
+      'twitter/gage_age_1918.png',
+      'twitter/gage_age_1919.png',
+      'twitter/gage_age_1920.png',
+      'twitter/gage_age_1921.png',
+      'twitter/gage_age_1922.png',
+      'twitter/gage_age_1923.png',
+      'twitter/gage_age_1924.png',
+      'twitter/gage_age_1925.png',
+      'twitter/gage_age_1926.png',
+      'twitter/gage_age_1927.png',
+      'twitter/gage_age_1928.png',
+      'twitter/gage_age_1929.png',
+      'twitter/gage_age_1930.png',
+      'twitter/gage_age_1931.png',
+      'twitter/gage_age_1932.png',
+      'twitter/gage_age_1933.png',
+      'twitter/gage_age_1934.png',
+      'twitter/gage_age_1935.png',
+      'twitter/gage_age_1936.png',
+      'twitter/gage_age_1937.png',
+      'twitter/gage_age_1938.png',
+      'twitter/gage_age_1939.png',
       'twitter/gage_age_1940.png',
       'twitter/gage_age_1941.png',
       'twitter/gage_age_1942.png',
