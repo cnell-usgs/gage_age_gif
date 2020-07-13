@@ -51,7 +51,7 @@ targets:
   
   twitter_frames:
     command: create_gif_frames(gage_years, 
-      width = 1024, height = 512, "src/data_utils.R")
+      width = 1024, height = 512, "src/data_utils.R", "src/plot_utils.R")
     depends: [gage_melt, state_map, site_map]
       
       
