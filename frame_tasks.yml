@@ -13,6 +13,7 @@ packages:
 
 sources:
   - src/data_utils.R
+  - src/plot_utils.R
 
 file_extensions:
   - "ind"
