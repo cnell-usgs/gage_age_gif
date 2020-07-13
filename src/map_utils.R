@@ -23,17 +23,7 @@ points_sp <- function(locations){
     sp::spTransform(CRS(proj.string)) %>% 
     sp::SpatialPointsDataFrame(data = locations[c('site_no')])
 }
-# 
-# shifts <- list(AK = list(scale = 0.37, shift = c(90,-460), rotate = -50),
-#                HI = list(scale = 1, shift = c(520, -110), rotate = -35),
-#                PR = list(scale = 2.5, shift = c(-140, 90), rotate=20))
-# 
-# stuff_to_move <- list(
-#   AK = to_sp("world", "USA:alaska"),
-#   HI = to_sp("world", "USA:hawaii"),
-#   PR = to_sp("world", "Puerto Rico")
-# )
-# 
+
 
 #' create the sp object 
 #'
