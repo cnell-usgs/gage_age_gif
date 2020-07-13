@@ -121,6 +121,6 @@ combine_frames <- function(file_out, hash_table){
   
   system(sprintf('convert %s %s', collapse_frames, file_out))
   reg_frames <- paste(sprintf('"#%s"', 1:(length(frame_names)-1)), collapse = ' ')
-  system(sprintf('gifsicle -b -O3 %s -d0 "#0" -d14 %s -d14 "#%s" --colors 256', file_out, reg_frames, length(frame_names)-1))
+  system(sprintf('gifsicle -b -O3 %s -d0 "#0" -d14 %s -d400 "#%s" --colors 256', file_out, reg_frames, length(frame_names)-1))
   
 }
