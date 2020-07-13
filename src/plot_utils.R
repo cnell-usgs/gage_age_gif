@@ -115,12 +115,11 @@ plot_sites <- function(filename, gage_melt, yr, site_map, state_map, width = 102
 combine_frames <- function(file_out, hash_table){
   
   frame_names <- hash_table$filename
-  
   # display the last frame first
   collapse_frames <- paste(c(tail(frame_names,1), frame_names), collapse = ' ')
   
   system(sprintf('convert %s %s', collapse_frames, file_out))
   reg_frames <- paste(sprintf('"#%s"', 1:(length(frame_names)-1)), collapse = ' ')
-  system(sprintf('gifsicle -b -O3 %s -d0 "#0" -d14 %s -d400 "#%s" --colors 256', file_out, reg_frames, length(frame_names)-1))
+  system(sprintf('gifsicle -b -O3 %s -d0 "#0" -d14 %s -d400 "#%s" --colors 256', file_out, reg_frames, length(frame_names)))
   
 }
