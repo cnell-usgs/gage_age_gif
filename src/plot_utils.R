@@ -1,6 +1,6 @@
 
 # for each year (frame), plot gained gages and the age distribution
-plot_sites <- function(filename, gage_melt, yr, site_data = "data/site-map.rds", state_map, width = 1024, height = 512){
+plot_sites <- function(filename, gage_melt, yr, site_map, state_map, width = 1024, height = 512){
   
   theme_set(theme_classic(base_size=16))
   showtext_auto()
@@ -10,7 +10,7 @@ plot_sites <- function(filename, gage_melt, yr, site_data = "data/site-map.rds",
   yr_max <- max(gage_melt$years_cum)
   
   # convert to sf 
-  sites.sf <- readRDS(site_data) %>% st_as_sf() # all sites
+  sites.sf <- site_map %>% st_as_sf() # all sites
   states.sf <- state_map %>% st_as_sf()
   
   # filter gage data to given year
@@ -64,7 +64,7 @@ plot_sites <- function(filename, gage_melt, yr, site_data = "data/site-map.rds",
   
   # save plot - stylized to twitter
   ## write to png
-  png(filename = filename, units='px')
+  png(filename = filename, units='px', width = width, height = height)
   ## hacky to set px
   print({ 
     # combine everything

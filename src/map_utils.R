@@ -55,25 +55,42 @@ fetch_state_map <- function(...){
   return(state_map)
 }
 
-process.site_map <- function(...){
-  library(dplyr)
-  sites <- readRDS('cache/disch-sites.rds') %>% filter(!is.na(dec_lat_va))
-  huc.map <- c(AK = "19", HI = "20", PR = "21")
+shift_sites <- function(..., gage_data){
+  huc_map <- c(AK = "19", HI = "20", PR = "21")
   
-  #parse huc_cd to 2 digits, and rename to huc to stay consistent
-  sites <- sites %>% mutate(huc = substr(huc, 1,2)) 
+  shift_details <- list(...)
   
-  sites.out <- sites %>% filter(!huc %in% huc.map) %>% 
+  gages_info <- readRDS(gage_data) %>%
+    pull(site) %>% 
+    dataRetrieval::readNWISsite() %>% 
+    group_by(site_no) %>% 
+    # parse huc_cd to 2 digits, and rename to huc to stay consistent
+    # 3/19/2020 - discovered that some sites have more than one HUC code, not sure how that
+    # is possible, but filtering to the last one (most recent) for now
+    #   E.g. site number `11434500` had huc_cd=="18020129" for year == 2014 and then 
+    #     huc_cd `16050101` for year == 2016
+    summarize(huc = stringr::str_sub(tail(unique(huc_cd),1), 1L, 2L), 
+              # huc = paste(stringr::str_sub(unique(huc_cd)[[1]], 1L, 2L), collapse = "|"),
+              dec_lat_va = mean(dec_lat_va), dec_long_va = mean(dec_long_va)) %>% 
+    filter(dec_long_va < -65.4)  # remove US virgin Islands and other things we won't plot
+  
+  
+  sites_out <- gages_info %>% filter(!huc %in% huc_map) %>% 
     points_sp()
   
-  for (region in names(huc.map)){
-    sites.tmp <- sites %>% filter(huc %in% huc.map[[region]]) %>% 
+  for(i in 1:length(shift_details)){
+    region <- shift_details[[i]]$abrv
+    
+    sites_tmp <- gages_info %>% filter(huc == huc_map[[region]]) %>% 
       points_sp()
-    sites.tmp <- do.call(shift_sp, c(sp = sites.tmp, ref = stuff_to_move[[region]], 
-                                     shifts[[region]]))
-    sites.out <- rbind(sites.out, sites.tmp)
+    
+    sites_out <- do.call(shift_sp, c(sp = sites_tmp, 
+                                     ref = to_sp("world", shift_details[[i]]$regions), 
+                                     shift_details[[i]][c('scale','shift','rotate')])) %>% 
+      rbind(sites_out, .)
   }
-  saveRDS(sites.out, file = 'cache/site-map.rds')
+
+  return(sites_out)
 }
 
 

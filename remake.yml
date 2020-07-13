@@ -26,14 +26,21 @@ targets:
       - twitter/gage_age.gif
   
   AK:
-    command: list(scale = 0.37, shift = I(c(90,-460)), rotate = I(-50), regions = I("USA:alaska"))
+    command: list(abrv = target_name, scale = 0.37, shift = I(c(90,-460)), 
+      rotate = I(-50), regions = I("USA:alaska"))
   HI:
-    command: list(scale = 1, shift = I(c(520, -110)), rotate = I(-35), regions = I("USA:hawaii"))
+    command: list(abrv = target_name, scale = 1, shift = I(c(520, -110)), 
+      rotate = I(-35), regions = I("USA:hawaii"))
   PR: 
-    command: list(scale = 2.5, shift = I(c(-140, 90)), rotate = 20, regions = I("Puerto Rico"))
+    command: list(abrv = target_name, scale = 2.5, shift = I(c(-140, 90)), 
+      rotate = 20, regions = I("Puerto Rico"))
   
   state_map:
     command: fetch_state_map(AK, HI, PR)
+    
+  site_map:
+    command: shift_sites(AK, HI, PR, 
+      gage_data = "data/active_flow_gages_summary_wy.rds")
       
   gage_melt:
     command: unravel_data(gage_data = "data/active_flow_gages_summary_wy.rds")
@@ -43,7 +50,7 @@ targets:
   
   twitter_frames:
     command: create_gif_frames(gage_years, gage_melt, width = 1024, height = 512, 
-      states = state_map, sites_file = "data/site-map.rds", "src/data_utils.R")
+      states = state_map, sites = site_map, "src/data_utils.R")
       
   twitter/gage_age.gif:
     command: combine_frames(target_name, twitter_frames)
