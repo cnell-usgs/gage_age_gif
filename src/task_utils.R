@@ -1,5 +1,5 @@
 
-create_frame_plan <- function(gage_years, gage_melt, width, height){
+create_frame_plan <- function(gage_years, width, height){
   step1 <- create_task_step(
     step_name = 'plot',
     target_name = function(task_name, step_name, ...) {
@@ -19,8 +19,8 @@ tibble_hash_frames <- function(...){
   tibble(filename = c(...), hash = tools::md5sum(filename))
 }
 
-create_gif_frames <- function(gage_years, gage_melt, states, sites, width, height, ...){
-  frame_plan <- create_frame_plan(gage_years, gage_melt, width = width, height = height)
+create_gif_frames <- function(gage_years, width, height, ...){
+  frame_plan <- create_frame_plan(gage_years, width = width, height = height)
   
   frame_makefile <- "frame_tasks.yml"
   

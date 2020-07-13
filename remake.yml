@@ -50,8 +50,10 @@ targets:
     command: seq(I(1900), I(2019))
   
   twitter_frames:
-    command: create_gif_frames(gage_years, gage_melt, width = 1024, height = 512, 
-      states = state_map, sites = site_map, "src/data_utils.R")
+    command: create_gif_frames(gage_years, 
+      width = 1024, height = 512, "src/data_utils.R")
+    depends: [gage_melt, state_map, site_map]
+      
       
   twitter/gage_age.gif:
     command: combine_frames(target_name, twitter_frames)
