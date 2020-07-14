@@ -30,14 +30,15 @@ plot_sites <- function(filename, gage_melt, yr, site_map, state_map, width = 102
   
   # plot sites on map
   plot_map <- ggplot()+
-    geom_sf(data = states.sf,  fill='grey90', color="white")+
+    geom_sf(data = states.sf,  fill='grey10', color="black")+
     geom_sf(data = yr_sites, aes(color = yrs_running, size = yrs_running), alpha = 0.7, shape = 16)+
     scale_size(range = c(.1,2.4), limits = c(0,yr_max))+
-    scale_color_scico(palette = 'imola', direction = -1, begin=0.2, end = 1, limits = c(0,yr_max))+
+    scale_color_scico(palette = 'imola', begin=0.2, end = 1, limits = c(0,yr_max))+
     theme_void(base_size=16)+
     theme(legend.position = 'none', 
-          plot.title = element_text(size=20), 
-          plot.caption = element_text(face = 'italic', hjust = 1, color = 'grey40'),
+          plot.title = element_text(size=20, color = 'grey70'), 
+          plot.background = element_rect(fill = "black"),
+          plot.caption = element_text(face = 'italic', hjust = 1, color = 'grey70'),
           plot.margin = unit(c(0,0,0,0), "cm"))
   
   plot_bee <- yr_bee %>%
@@ -48,19 +49,25 @@ plot_sites <- function(filename, gage_melt, yr, site_map, state_map, width = 102
     geom_linerange(aes(x = yrs_running, ymin=0-half, ymax=half, color=yrs_running), size=1.3)+
     labs(x='Age of active gages', y='Number of gages')+
     theme(axis.line=element_blank(), 
-          panel.grid.major.y = element_line(color='grey90'),
+          panel.grid.major.y = element_line(color='grey30'),
+          axis.text.x = element_text(color = "grey70"),
+          axis.title.x = element_text(color = "grey70"),
+          axis.text.y = element_text(color = "grey70"),
+          axis.title.y = element_text(color = "grey70"),
           aspect.ratio=1.5, 
           axis.ticks.y = element_blank(), 
           plot.title.position="plot",
           legend.position='none',
+          plot.background=element_rect(fill='black', color='black'),
+          panel.background=element_rect(fill='black', color='black'),
           plot.margin = unit(c(0,0,0,0), "cm"),
-          plot.caption = element_text(face = 'italic', hjust = 0, color = 'grey40', size = 12),
-          plot.subtitle = element_text(size = 12),
-          plot.title = element_text(size = 20 ))+
+          plot.caption = element_text(face = 'italic', hjust = 0, color = 'grey70', size = 12),
+          plot.subtitle = element_text(size = 12, color = 'grey70'),
+          plot.title = element_text(size = 20, color = 'grey70'))+
     coord_flip()+
     scale_y_continuous(expand = c(0,0), limits = c(-230, 230), breaks = c(0,100,200), labels = c(0,200,400))+ # if showing inactive gages need to adjust to have axis reflect the max number of gages in a given class
     scale_x_continuous(expand=c(0,0), limits = c(1,yr_max), breaks=c(1,20, 40, 60, 80, 100, 120, 140))+
-    scale_color_scico(palette = 'imola', direction = -1, begin=0.2, end = 1, limits = c(0,yr_max))
+    scale_color_scico(palette = 'imola', begin=0.2, end = 1, limits = c(0,yr_max))
   
   # save plot - stylized to twitter
   ## write to png
@@ -72,24 +79,25 @@ plot_sites <- function(filename, gage_melt, yr, site_map, state_map, width = 102
       plot_annotation(title = 'Gages through the ages', 
                       subtitle = 'Age and location of active U.S. Geological Survey stream gages', 
                       caption = "labs.waterdata.usgs.gov/visualizations/gages-through-the-ages",
-                      theme = theme(plot.caption = element_text(face = 'italic', hjust = 0, color = 'grey40', size = 12),
-                                    plot.subtitle = element_text(size = 12),
-                                    plot.title = element_text(size = 20 )))
+                      theme = theme(plot.caption = element_text(face = 'italic', hjust = 0, color = 'grey70', size = 12),
+                                    plot.subtitle = element_text(size = 12, color = 'grey70'),
+                                    plot.background=element_rect(fill='black', color='black'),
+                                    plot.title = element_text(size = 20, color = 'grey70')))
   })
   dev.off()
   
   ## timeline bar
   plot_timeline <- data.frame(Year = c(1889, 2020))%>%
     ggplot()+
-    geom_segment(aes(x=min(Year), xend=max(Year), y=1, yend=1), size=2, color = 'grey90')+
+    geom_segment(aes(x=min(Year), xend=max(Year), y=1, yend=1), size=2, color = 'grey70')+
     geom_point(aes(x=yr_num, y=1), size=3.5, color='#E83715', fill = 'transparent', stroke=2, shape=16)+
-    geom_text(aes(label=Year, x=Year, y=1), vjust=2)+
-    geom_text(aes(label=yr_num, x=yr_num, y=1), vjust=-1.5)+
+    geom_text(aes(label=Year, x=Year, y=1), vjust=2, color = 'grey70')+
+    geom_text(aes(label=yr_num, x=yr_num, y=1), vjust=-1.5, color = 'grey70')+
     theme_void(base_size=16)+
-    theme(text = element_text(size = 16), plot.margin = unit(c(0,0,0,0), "mm"),
-          plot.background=element_rect(fill='transparent', color='transparent'), panel.background=element_rect(fill='transparent', color='transparent'))
+    theme(text = element_text(size = 16, color = 'grey70'), plot.margin = unit(c(0,0,0,0), "mm"),
+          plot.background=element_rect(fill='black', color='black'), panel.background=element_rect(fill='black', color='black'))
   
-  png(filename = 'timeline.png',units='px', width = 400, height = 51)
+  png(filename = 'timeline.png', units='px', width = 400, height = 51)
   print({ 
     plot_timeline
   })
@@ -102,8 +110,8 @@ plot_sites <- function(filename, gage_melt, yr, site_map, state_map, width = 102
   
   # rescle and recolor logo
   logo_mark <- image_scale(usgs, 150)%>%
-    image_fill(color = 'grey', fuzz = 50) %>%
-    image_colorize(opacity = 70, color= 'white')
+    image_fill(color = 'grey10', fuzz = 50) %>%
+    image_colorize(opacity = 100, color= 'grey10')
   
   # make composite image and save
   gif_final <- image_composite(img_yr, logo_mark, offset='+800+440')%>%
