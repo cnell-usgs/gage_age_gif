@@ -1,6 +1,6 @@
 
 # for each year (frame), plot gained gages and the age distribution
-plot_sites <- function(filename, gage_melt, yr, site_data = "data/site-map.rds", state_data ="data/state-map.rds"){
+plot_sites <- function(filename, gage_melt, yr, site_map, state_map, width = 1024, height = 512){
   
   theme_set(theme_classic(base_size=16))
   showtext_auto()
@@ -10,8 +10,8 @@ plot_sites <- function(filename, gage_melt, yr, site_data = "data/site-map.rds",
   yr_max <- max(gage_melt$years_cum)
   
   # convert to sf 
-  sites.sf <- readRDS(site_data) %>% st_as_sf() # all sites
-  states.sf <- readRDS(state_data) %>% st_as_sf()
+  sites.sf <- site_map %>% st_as_sf() # all sites
+  states.sf <- state_map %>% st_as_sf()
   
   # filter gage data to given year
   yr_gages <- gage_melt %>%
@@ -64,7 +64,7 @@ plot_sites <- function(filename, gage_melt, yr, site_data = "data/site-map.rds",
   
   # save plot - stylized to twitter
   ## write to png
-  png(filename = filename, width = 1024, height = 512, units='px')
+  png(filename = filename, units='px', width = width, height = height)
   ## hacky to set px
   print({ 
     # combine everything
@@ -112,30 +112,14 @@ plot_sites <- function(filename, gage_melt, yr, site_data = "data/site-map.rds",
   
 }
 
-create_frame_plan <- function(gage_years, gage_melt){
-  step1 <- create_task_step(
-    step_name = 'plot',
-    target_name = function(task_name, step_name, ...) {
-      sprintf('twitter/gage_age_%s.png', task_name)
-    },
-    command = function(task_name, step_name, ...) {
-      sprintf('plot_sites(target_name, gage_melt, yr = %s)', task_name)
-    }
-  )
-  task_plan <- create_task_plan(as.character(gage_years), list(step1),
-                                final_steps='plot', add_complete = FALSE)
-  return(task_plan)
-}
-
-combine_frames <- function(filename, ...){
+combine_frames <- function(file_out, hash_table){
   
-  frame_names <- c(...)
-  
+  frame_names <- hash_table$filename
   # display the last frame first
   collapse_frames <- paste(c(tail(frame_names,1), frame_names), collapse = ' ')
   
-  system(sprintf('convert %s %s', collapse_frames, filename))
+  system(sprintf('convert %s %s', collapse_frames, file_out))
   reg_frames <- paste(sprintf('"#%s"', 1:(length(frame_names)-1)), collapse = ' ')
-  system(sprintf('gifsicle -b -O3 %s -d0 "#0" -d14 %s -d400 "#%s" --colors 256', filename, reg_frames, length(frame_names)-1))
+  system(sprintf('gifsicle -b -O3 %s -d0 "#0" -d14 %s -d400 "#%s" --colors 256', file_out, reg_frames, length(frame_names)))
   
 }

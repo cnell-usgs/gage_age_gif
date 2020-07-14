@@ -4,9 +4,13 @@ packages:
   - tidyverse
   - reshape2
   - sp
+  - maps
+  - rgeos
   - sf
   - patchwork
+  - dataRetrieval
   - scico
+  - scipiper
   - remake
   - magick
   - showtext
@@ -14,28 +18,42 @@ packages:
 sources:
   - src/data_utils.R
   - src/plot_utils.R
+  - src/task_utils.R
+  - src/map_utils.R
   
 targets:
   gage_age_gif:
     depends:
       - twitter/gage_age.gif
+  
+  AK:
+    command: list(abrv = target_name, scale = 0.37, shift = I(c(90,-460)), 
+      rotate = I(-50), regions = I("USA:alaska"))
+  HI:
+    command: list(abrv = target_name, scale = 1, shift = I(c(520, -110)), 
+      rotate = I(-35), regions = I("USA:hawaii"))
+  PR: 
+    command: list(abrv = target_name, scale = 2.5, shift = I(c(-140, 90)), 
+      rotate = 20, regions = I("Puerto Rico"))
+  
+  state_map:
+    command: fetch_state_map(AK, HI, PR)
+    
+  site_map:
+    command: shift_sites(AK, HI, PR, 
+      gage_data = "data/active_flow_gages_summary_wy.rds")
       
   gage_melt:
     command: unravel_data(gage_data = "data/active_flow_gages_summary_wy.rds")
     
   gage_years:
-    command: seq(I(1940), I(2019))
-    
-  frame_task_plan:
-    command: create_frame_plan(gage_years, gage_melt)
-    
-  frame_tasks.yml:
-    command: create_task_makefile(
-      task_plan = frame_task_plan, 
-      makefile = target_name, 
-      include = I("remake.yml"),
-      final_targets = I("twitter/gage_age.gif"),
-      finalize_funs = I('combine_frames'))
+    command: seq(I(1900), I(2019))
+  
+  twitter_frames:
+    command: create_gif_frames(gage_years, 
+      width = 1024, height = 512, "src/data_utils.R", "src/plot_utils.R")
+    depends: [gage_melt, state_map, site_map]
+      
       
   twitter/gage_age.gif:
-    command: scmake(I("gage_age.gif_promise"), remake_file = "frame_tasks.yml")
+    command: combine_frames(target_name, twitter_frames)
