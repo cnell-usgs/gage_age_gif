@@ -5,7 +5,7 @@ create_frame_plan <- function(gage_years, width, height, format){
     step1 <- create_task_step(
       step_name = 'plot',
       target_name = function(task_name, step_name, ...) {
-        sprintf('outtwitter/gage_age_%s.png', task_name)
+        sprintf('out/twitter/gage_age_%s.png', task_name)
       },
       command = function(task_name, step_name, ...) {
         sprintf('plot_twitter(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = %s, width = %s, height = %s)', task_name, width, height)
@@ -34,7 +34,7 @@ create_frame_plan <- function(gage_years, width, height, format){
     
   }
 
-  task_plan <- create_task_plan(as.character(gage_years), list(step1),
+  task_plan <- create_task_plan(as.character(gage_years), list(step1, step2, step3),
                                 final_steps='plot', add_complete = FALSE)
   return(task_plan)
 }
