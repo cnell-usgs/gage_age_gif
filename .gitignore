@@ -3,7 +3,6 @@
 .RData
 .Ruserdata
 .remake
-twitter/
-data/
-timeline.png
 .Rproj
+*.rds
+*.png

@@ -24,7 +24,9 @@ sources:
 targets:
   gage_age_gif:
     depends:
-      - twitter/gage_age.gif
+      - out/twitter/gage_age.gif
+      - out/instagram/gage_age.gif
+      - out/facebook/gage_age.gif
   
   AK:
     command: list(abrv = target_name, scale = 0.37, shift = I(c(90,-460)), 
@@ -47,13 +49,29 @@ targets:
     command: unravel_data(gage_data = "data/active_flow_gages_summary_wy.rds")
     
   gage_years:
-    command: seq(I(1900), I(2019))
+    command: seq(I(1889), I(2019))
   
   twitter_frames:
     command: create_gif_frames(gage_years, 
-      width = 1024, height = 512, "src/data_utils.R", "src/plot_utils.R")
+      width = 1024, height = 512, format = I('twitter'), "src/data_utils.R", "src/plot_utils.R")
+    depends: [gage_melt, state_map, site_map]
+    
+  instagram_frames:
+    command: create_gif_frames(gage_years, 
+      width = 1080, height = 1080, format = I('instagram'), "src/data_utils.R", "src/plot_utils.R")
+    depends: [gage_melt, state_map, site_map]
+      
+  facebook_frames:
+    command: create_gif_frames(gage_years, 
+      width = 1200, height = 628, format = I('facebook'), "src/data_utils.R", "src/plot_utils.R")
     depends: [gage_melt, state_map, site_map]
       
       
-  twitter/gage_age.gif:
+  out/twitter/gage_age.gif:
     command: combine_frames(target_name, twitter_frames)
+    
+  out/instagram/gage_age.gif:
+    command: combine_frames(target_name, instagram_frames)
+    
+  out/facebook/gage_age.gif:
+    command: combine_frames(target_name, facebook_frames)

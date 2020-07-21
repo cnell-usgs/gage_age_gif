@@ -23,728 +23,794 @@ targets:
     depends:
       - hash_table
 
+  # --- 1889 --- #
+  
+  facebook/gage_age_1889.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1889, width = 1200, height = 628)
+
+  # --- 1890 --- #
+  
+  facebook/gage_age_1890.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1890, width = 1200, height = 628)
+
+  # --- 1891 --- #
+  
+  facebook/gage_age_1891.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1891, width = 1200, height = 628)
+
+  # --- 1892 --- #
+  
+  facebook/gage_age_1892.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1892, width = 1200, height = 628)
+
+  # --- 1893 --- #
+  
+  facebook/gage_age_1893.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1893, width = 1200, height = 628)
+
+  # --- 1894 --- #
+  
+  facebook/gage_age_1894.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1894, width = 1200, height = 628)
+
+  # --- 1895 --- #
+  
+  facebook/gage_age_1895.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1895, width = 1200, height = 628)
+
+  # --- 1896 --- #
+  
+  facebook/gage_age_1896.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1896, width = 1200, height = 628)
+
+  # --- 1897 --- #
+  
+  facebook/gage_age_1897.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1897, width = 1200, height = 628)
+
+  # --- 1898 --- #
+  
+  facebook/gage_age_1898.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1898, width = 1200, height = 628)
+
+  # --- 1899 --- #
+  
+  facebook/gage_age_1899.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1899, width = 1200, height = 628)
+
   # --- 1900 --- #
   
-  twitter/gage_age_1900.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1900, width = 1024, height = 512)
+  facebook/gage_age_1900.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1900, width = 1200, height = 628)
 
   # --- 1901 --- #
   
-  twitter/gage_age_1901.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1901, width = 1024, height = 512)
+  facebook/gage_age_1901.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1901, width = 1200, height = 628)
 
   # --- 1902 --- #
   
-  twitter/gage_age_1902.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1902, width = 1024, height = 512)
+  facebook/gage_age_1902.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1902, width = 1200, height = 628)
 
   # --- 1903 --- #
   
-  twitter/gage_age_1903.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1903, width = 1024, height = 512)
+  facebook/gage_age_1903.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1903, width = 1200, height = 628)
 
   # --- 1904 --- #
   
-  twitter/gage_age_1904.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1904, width = 1024, height = 512)
+  facebook/gage_age_1904.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1904, width = 1200, height = 628)
 
   # --- 1905 --- #
   
-  twitter/gage_age_1905.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1905, width = 1024, height = 512)
+  facebook/gage_age_1905.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1905, width = 1200, height = 628)
 
   # --- 1906 --- #
   
-  twitter/gage_age_1906.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1906, width = 1024, height = 512)
+  facebook/gage_age_1906.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1906, width = 1200, height = 628)
 
   # --- 1907 --- #
   
-  twitter/gage_age_1907.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1907, width = 1024, height = 512)
+  facebook/gage_age_1907.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1907, width = 1200, height = 628)
 
   # --- 1908 --- #
   
-  twitter/gage_age_1908.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1908, width = 1024, height = 512)
+  facebook/gage_age_1908.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1908, width = 1200, height = 628)
 
   # --- 1909 --- #
   
-  twitter/gage_age_1909.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1909, width = 1024, height = 512)
+  facebook/gage_age_1909.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1909, width = 1200, height = 628)
 
   # --- 1910 --- #
   
-  twitter/gage_age_1910.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1910, width = 1024, height = 512)
+  facebook/gage_age_1910.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1910, width = 1200, height = 628)
 
   # --- 1911 --- #
   
-  twitter/gage_age_1911.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1911, width = 1024, height = 512)
+  facebook/gage_age_1911.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1911, width = 1200, height = 628)
 
   # --- 1912 --- #
   
-  twitter/gage_age_1912.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1912, width = 1024, height = 512)
+  facebook/gage_age_1912.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1912, width = 1200, height = 628)
 
   # --- 1913 --- #
   
-  twitter/gage_age_1913.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1913, width = 1024, height = 512)
+  facebook/gage_age_1913.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1913, width = 1200, height = 628)
 
   # --- 1914 --- #
   
-  twitter/gage_age_1914.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1914, width = 1024, height = 512)
+  facebook/gage_age_1914.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1914, width = 1200, height = 628)
 
   # --- 1915 --- #
   
-  twitter/gage_age_1915.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1915, width = 1024, height = 512)
+  facebook/gage_age_1915.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1915, width = 1200, height = 628)
 
   # --- 1916 --- #
   
-  twitter/gage_age_1916.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1916, width = 1024, height = 512)
+  facebook/gage_age_1916.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1916, width = 1200, height = 628)
 
   # --- 1917 --- #
   
-  twitter/gage_age_1917.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1917, width = 1024, height = 512)
+  facebook/gage_age_1917.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1917, width = 1200, height = 628)
 
   # --- 1918 --- #
   
-  twitter/gage_age_1918.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1918, width = 1024, height = 512)
+  facebook/gage_age_1918.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1918, width = 1200, height = 628)
 
   # --- 1919 --- #
   
-  twitter/gage_age_1919.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1919, width = 1024, height = 512)
+  facebook/gage_age_1919.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1919, width = 1200, height = 628)
 
   # --- 1920 --- #
   
-  twitter/gage_age_1920.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1920, width = 1024, height = 512)
+  facebook/gage_age_1920.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1920, width = 1200, height = 628)
 
   # --- 1921 --- #
   
-  twitter/gage_age_1921.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1921, width = 1024, height = 512)
+  facebook/gage_age_1921.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1921, width = 1200, height = 628)
 
   # --- 1922 --- #
   
-  twitter/gage_age_1922.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1922, width = 1024, height = 512)
+  facebook/gage_age_1922.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1922, width = 1200, height = 628)
 
   # --- 1923 --- #
   
-  twitter/gage_age_1923.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1923, width = 1024, height = 512)
+  facebook/gage_age_1923.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1923, width = 1200, height = 628)
 
   # --- 1924 --- #
   
-  twitter/gage_age_1924.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1924, width = 1024, height = 512)
+  facebook/gage_age_1924.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1924, width = 1200, height = 628)
 
   # --- 1925 --- #
   
-  twitter/gage_age_1925.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1925, width = 1024, height = 512)
+  facebook/gage_age_1925.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1925, width = 1200, height = 628)
 
   # --- 1926 --- #
   
-  twitter/gage_age_1926.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1926, width = 1024, height = 512)
+  facebook/gage_age_1926.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1926, width = 1200, height = 628)
 
   # --- 1927 --- #
   
-  twitter/gage_age_1927.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1927, width = 1024, height = 512)
+  facebook/gage_age_1927.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1927, width = 1200, height = 628)
 
   # --- 1928 --- #
   
-  twitter/gage_age_1928.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1928, width = 1024, height = 512)
+  facebook/gage_age_1928.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1928, width = 1200, height = 628)
 
   # --- 1929 --- #
   
-  twitter/gage_age_1929.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1929, width = 1024, height = 512)
+  facebook/gage_age_1929.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1929, width = 1200, height = 628)
 
   # --- 1930 --- #
   
-  twitter/gage_age_1930.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1930, width = 1024, height = 512)
+  facebook/gage_age_1930.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1930, width = 1200, height = 628)
 
   # --- 1931 --- #
   
-  twitter/gage_age_1931.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1931, width = 1024, height = 512)
+  facebook/gage_age_1931.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1931, width = 1200, height = 628)
 
   # --- 1932 --- #
   
-  twitter/gage_age_1932.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1932, width = 1024, height = 512)
+  facebook/gage_age_1932.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1932, width = 1200, height = 628)
 
   # --- 1933 --- #
   
-  twitter/gage_age_1933.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1933, width = 1024, height = 512)
+  facebook/gage_age_1933.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1933, width = 1200, height = 628)
 
   # --- 1934 --- #
   
-  twitter/gage_age_1934.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1934, width = 1024, height = 512)
+  facebook/gage_age_1934.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1934, width = 1200, height = 628)
 
   # --- 1935 --- #
   
-  twitter/gage_age_1935.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1935, width = 1024, height = 512)
+  facebook/gage_age_1935.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1935, width = 1200, height = 628)
 
   # --- 1936 --- #
   
-  twitter/gage_age_1936.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1936, width = 1024, height = 512)
+  facebook/gage_age_1936.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1936, width = 1200, height = 628)
 
   # --- 1937 --- #
   
-  twitter/gage_age_1937.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1937, width = 1024, height = 512)
+  facebook/gage_age_1937.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1937, width = 1200, height = 628)
 
   # --- 1938 --- #
   
-  twitter/gage_age_1938.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1938, width = 1024, height = 512)
+  facebook/gage_age_1938.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1938, width = 1200, height = 628)
 
   # --- 1939 --- #
   
-  twitter/gage_age_1939.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1939, width = 1024, height = 512)
+  facebook/gage_age_1939.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1939, width = 1200, height = 628)
 
   # --- 1940 --- #
   
-  twitter/gage_age_1940.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1940, width = 1024, height = 512)
+  facebook/gage_age_1940.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1940, width = 1200, height = 628)
 
   # --- 1941 --- #
   
-  twitter/gage_age_1941.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1941, width = 1024, height = 512)
+  facebook/gage_age_1941.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1941, width = 1200, height = 628)
 
   # --- 1942 --- #
   
-  twitter/gage_age_1942.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1942, width = 1024, height = 512)
+  facebook/gage_age_1942.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1942, width = 1200, height = 628)
 
   # --- 1943 --- #
   
-  twitter/gage_age_1943.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1943, width = 1024, height = 512)
+  facebook/gage_age_1943.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1943, width = 1200, height = 628)
 
   # --- 1944 --- #
   
-  twitter/gage_age_1944.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1944, width = 1024, height = 512)
+  facebook/gage_age_1944.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1944, width = 1200, height = 628)
 
   # --- 1945 --- #
   
-  twitter/gage_age_1945.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1945, width = 1024, height = 512)
+  facebook/gage_age_1945.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1945, width = 1200, height = 628)
 
   # --- 1946 --- #
   
-  twitter/gage_age_1946.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1946, width = 1024, height = 512)
+  facebook/gage_age_1946.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1946, width = 1200, height = 628)
 
   # --- 1947 --- #
   
-  twitter/gage_age_1947.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1947, width = 1024, height = 512)
+  facebook/gage_age_1947.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1947, width = 1200, height = 628)
 
   # --- 1948 --- #
   
-  twitter/gage_age_1948.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1948, width = 1024, height = 512)
+  facebook/gage_age_1948.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1948, width = 1200, height = 628)
 
   # --- 1949 --- #
   
-  twitter/gage_age_1949.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1949, width = 1024, height = 512)
+  facebook/gage_age_1949.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1949, width = 1200, height = 628)
 
   # --- 1950 --- #
   
-  twitter/gage_age_1950.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1950, width = 1024, height = 512)
+  facebook/gage_age_1950.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1950, width = 1200, height = 628)
 
   # --- 1951 --- #
   
-  twitter/gage_age_1951.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1951, width = 1024, height = 512)
+  facebook/gage_age_1951.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1951, width = 1200, height = 628)
 
   # --- 1952 --- #
   
-  twitter/gage_age_1952.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1952, width = 1024, height = 512)
+  facebook/gage_age_1952.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1952, width = 1200, height = 628)
 
   # --- 1953 --- #
   
-  twitter/gage_age_1953.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1953, width = 1024, height = 512)
+  facebook/gage_age_1953.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1953, width = 1200, height = 628)
 
   # --- 1954 --- #
   
-  twitter/gage_age_1954.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1954, width = 1024, height = 512)
+  facebook/gage_age_1954.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1954, width = 1200, height = 628)
 
   # --- 1955 --- #
   
-  twitter/gage_age_1955.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1955, width = 1024, height = 512)
+  facebook/gage_age_1955.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1955, width = 1200, height = 628)
 
   # --- 1956 --- #
   
-  twitter/gage_age_1956.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1956, width = 1024, height = 512)
+  facebook/gage_age_1956.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1956, width = 1200, height = 628)
 
   # --- 1957 --- #
   
-  twitter/gage_age_1957.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1957, width = 1024, height = 512)
+  facebook/gage_age_1957.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1957, width = 1200, height = 628)
 
   # --- 1958 --- #
   
-  twitter/gage_age_1958.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1958, width = 1024, height = 512)
+  facebook/gage_age_1958.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1958, width = 1200, height = 628)
 
   # --- 1959 --- #
   
-  twitter/gage_age_1959.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1959, width = 1024, height = 512)
+  facebook/gage_age_1959.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1959, width = 1200, height = 628)
 
   # --- 1960 --- #
   
-  twitter/gage_age_1960.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1960, width = 1024, height = 512)
+  facebook/gage_age_1960.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1960, width = 1200, height = 628)
 
   # --- 1961 --- #
   
-  twitter/gage_age_1961.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1961, width = 1024, height = 512)
+  facebook/gage_age_1961.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1961, width = 1200, height = 628)
 
   # --- 1962 --- #
   
-  twitter/gage_age_1962.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1962, width = 1024, height = 512)
+  facebook/gage_age_1962.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1962, width = 1200, height = 628)
 
   # --- 1963 --- #
   
-  twitter/gage_age_1963.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1963, width = 1024, height = 512)
+  facebook/gage_age_1963.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1963, width = 1200, height = 628)
 
   # --- 1964 --- #
   
-  twitter/gage_age_1964.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1964, width = 1024, height = 512)
+  facebook/gage_age_1964.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1964, width = 1200, height = 628)
 
   # --- 1965 --- #
   
-  twitter/gage_age_1965.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1965, width = 1024, height = 512)
+  facebook/gage_age_1965.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1965, width = 1200, height = 628)
 
   # --- 1966 --- #
   
-  twitter/gage_age_1966.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1966, width = 1024, height = 512)
+  facebook/gage_age_1966.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1966, width = 1200, height = 628)
 
   # --- 1967 --- #
   
-  twitter/gage_age_1967.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1967, width = 1024, height = 512)
+  facebook/gage_age_1967.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1967, width = 1200, height = 628)
 
   # --- 1968 --- #
   
-  twitter/gage_age_1968.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1968, width = 1024, height = 512)
+  facebook/gage_age_1968.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1968, width = 1200, height = 628)
 
   # --- 1969 --- #
   
-  twitter/gage_age_1969.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1969, width = 1024, height = 512)
+  facebook/gage_age_1969.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1969, width = 1200, height = 628)
 
   # --- 1970 --- #
   
-  twitter/gage_age_1970.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1970, width = 1024, height = 512)
+  facebook/gage_age_1970.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1970, width = 1200, height = 628)
 
   # --- 1971 --- #
   
-  twitter/gage_age_1971.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1971, width = 1024, height = 512)
+  facebook/gage_age_1971.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1971, width = 1200, height = 628)
 
   # --- 1972 --- #
   
-  twitter/gage_age_1972.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1972, width = 1024, height = 512)
+  facebook/gage_age_1972.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1972, width = 1200, height = 628)
 
   # --- 1973 --- #
   
-  twitter/gage_age_1973.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1973, width = 1024, height = 512)
+  facebook/gage_age_1973.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1973, width = 1200, height = 628)
 
   # --- 1974 --- #
   
-  twitter/gage_age_1974.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1974, width = 1024, height = 512)
+  facebook/gage_age_1974.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1974, width = 1200, height = 628)
 
   # --- 1975 --- #
   
-  twitter/gage_age_1975.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1975, width = 1024, height = 512)
+  facebook/gage_age_1975.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1975, width = 1200, height = 628)
 
   # --- 1976 --- #
   
-  twitter/gage_age_1976.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1976, width = 1024, height = 512)
+  facebook/gage_age_1976.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1976, width = 1200, height = 628)
 
   # --- 1977 --- #
   
-  twitter/gage_age_1977.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1977, width = 1024, height = 512)
+  facebook/gage_age_1977.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1977, width = 1200, height = 628)
 
   # --- 1978 --- #
   
-  twitter/gage_age_1978.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1978, width = 1024, height = 512)
+  facebook/gage_age_1978.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1978, width = 1200, height = 628)
 
   # --- 1979 --- #
   
-  twitter/gage_age_1979.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1979, width = 1024, height = 512)
+  facebook/gage_age_1979.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1979, width = 1200, height = 628)
 
   # --- 1980 --- #
   
-  twitter/gage_age_1980.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1980, width = 1024, height = 512)
+  facebook/gage_age_1980.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1980, width = 1200, height = 628)
 
   # --- 1981 --- #
   
-  twitter/gage_age_1981.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1981, width = 1024, height = 512)
+  facebook/gage_age_1981.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1981, width = 1200, height = 628)
 
   # --- 1982 --- #
   
-  twitter/gage_age_1982.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1982, width = 1024, height = 512)
+  facebook/gage_age_1982.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1982, width = 1200, height = 628)
 
   # --- 1983 --- #
   
-  twitter/gage_age_1983.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1983, width = 1024, height = 512)
+  facebook/gage_age_1983.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1983, width = 1200, height = 628)
 
   # --- 1984 --- #
   
-  twitter/gage_age_1984.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1984, width = 1024, height = 512)
+  facebook/gage_age_1984.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1984, width = 1200, height = 628)
 
   # --- 1985 --- #
   
-  twitter/gage_age_1985.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1985, width = 1024, height = 512)
+  facebook/gage_age_1985.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1985, width = 1200, height = 628)
 
   # --- 1986 --- #
   
-  twitter/gage_age_1986.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1986, width = 1024, height = 512)
+  facebook/gage_age_1986.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1986, width = 1200, height = 628)
 
   # --- 1987 --- #
   
-  twitter/gage_age_1987.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1987, width = 1024, height = 512)
+  facebook/gage_age_1987.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1987, width = 1200, height = 628)
 
   # --- 1988 --- #
   
-  twitter/gage_age_1988.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1988, width = 1024, height = 512)
+  facebook/gage_age_1988.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1988, width = 1200, height = 628)
 
   # --- 1989 --- #
   
-  twitter/gage_age_1989.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1989, width = 1024, height = 512)
+  facebook/gage_age_1989.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1989, width = 1200, height = 628)
 
   # --- 1990 --- #
   
-  twitter/gage_age_1990.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1990, width = 1024, height = 512)
+  facebook/gage_age_1990.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1990, width = 1200, height = 628)
 
   # --- 1991 --- #
   
-  twitter/gage_age_1991.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1991, width = 1024, height = 512)
+  facebook/gage_age_1991.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1991, width = 1200, height = 628)
 
   # --- 1992 --- #
   
-  twitter/gage_age_1992.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1992, width = 1024, height = 512)
+  facebook/gage_age_1992.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1992, width = 1200, height = 628)
 
   # --- 1993 --- #
   
-  twitter/gage_age_1993.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1993, width = 1024, height = 512)
+  facebook/gage_age_1993.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1993, width = 1200, height = 628)
 
   # --- 1994 --- #
   
-  twitter/gage_age_1994.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1994, width = 1024, height = 512)
+  facebook/gage_age_1994.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1994, width = 1200, height = 628)
 
   # --- 1995 --- #
   
-  twitter/gage_age_1995.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1995, width = 1024, height = 512)
+  facebook/gage_age_1995.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1995, width = 1200, height = 628)
 
   # --- 1996 --- #
   
-  twitter/gage_age_1996.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1996, width = 1024, height = 512)
+  facebook/gage_age_1996.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1996, width = 1200, height = 628)
 
   # --- 1997 --- #
   
-  twitter/gage_age_1997.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1997, width = 1024, height = 512)
+  facebook/gage_age_1997.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1997, width = 1200, height = 628)
 
   # --- 1998 --- #
   
-  twitter/gage_age_1998.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1998, width = 1024, height = 512)
+  facebook/gage_age_1998.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1998, width = 1200, height = 628)
 
   # --- 1999 --- #
   
-  twitter/gage_age_1999.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1999, width = 1024, height = 512)
+  facebook/gage_age_1999.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 1999, width = 1200, height = 628)
 
   # --- 2000 --- #
   
-  twitter/gage_age_2000.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2000, width = 1024, height = 512)
+  facebook/gage_age_2000.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2000, width = 1200, height = 628)
 
   # --- 2001 --- #
   
-  twitter/gage_age_2001.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2001, width = 1024, height = 512)
+  facebook/gage_age_2001.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2001, width = 1200, height = 628)
 
   # --- 2002 --- #
   
-  twitter/gage_age_2002.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2002, width = 1024, height = 512)
+  facebook/gage_age_2002.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2002, width = 1200, height = 628)
 
   # --- 2003 --- #
   
-  twitter/gage_age_2003.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2003, width = 1024, height = 512)
+  facebook/gage_age_2003.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2003, width = 1200, height = 628)
 
   # --- 2004 --- #
   
-  twitter/gage_age_2004.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2004, width = 1024, height = 512)
+  facebook/gage_age_2004.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2004, width = 1200, height = 628)
 
   # --- 2005 --- #
   
-  twitter/gage_age_2005.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2005, width = 1024, height = 512)
+  facebook/gage_age_2005.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2005, width = 1200, height = 628)
 
   # --- 2006 --- #
   
-  twitter/gage_age_2006.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2006, width = 1024, height = 512)
+  facebook/gage_age_2006.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2006, width = 1200, height = 628)
 
   # --- 2007 --- #
   
-  twitter/gage_age_2007.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2007, width = 1024, height = 512)
+  facebook/gage_age_2007.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2007, width = 1200, height = 628)
 
   # --- 2008 --- #
   
-  twitter/gage_age_2008.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2008, width = 1024, height = 512)
+  facebook/gage_age_2008.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2008, width = 1200, height = 628)
 
   # --- 2009 --- #
   
-  twitter/gage_age_2009.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2009, width = 1024, height = 512)
+  facebook/gage_age_2009.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2009, width = 1200, height = 628)
 
   # --- 2010 --- #
   
-  twitter/gage_age_2010.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2010, width = 1024, height = 512)
+  facebook/gage_age_2010.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2010, width = 1200, height = 628)
 
   # --- 2011 --- #
   
-  twitter/gage_age_2011.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2011, width = 1024, height = 512)
+  facebook/gage_age_2011.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2011, width = 1200, height = 628)
 
   # --- 2012 --- #
   
-  twitter/gage_age_2012.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2012, width = 1024, height = 512)
+  facebook/gage_age_2012.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2012, width = 1200, height = 628)
 
   # --- 2013 --- #
   
-  twitter/gage_age_2013.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2013, width = 1024, height = 512)
+  facebook/gage_age_2013.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2013, width = 1200, height = 628)
 
   # --- 2014 --- #
   
-  twitter/gage_age_2014.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2014, width = 1024, height = 512)
+  facebook/gage_age_2014.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2014, width = 1200, height = 628)
 
   # --- 2015 --- #
   
-  twitter/gage_age_2015.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2015, width = 1024, height = 512)
+  facebook/gage_age_2015.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2015, width = 1200, height = 628)
 
   # --- 2016 --- #
   
-  twitter/gage_age_2016.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2016, width = 1024, height = 512)
+  facebook/gage_age_2016.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2016, width = 1200, height = 628)
 
   # --- 2017 --- #
   
-  twitter/gage_age_2017.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2017, width = 1024, height = 512)
+  facebook/gage_age_2017.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2017, width = 1200, height = 628)
 
   # --- 2018 --- #
   
-  twitter/gage_age_2018.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2018, width = 1024, height = 512)
+  facebook/gage_age_2018.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2018, width = 1200, height = 628)
 
   # --- 2019 --- #
   
-  twitter/gage_age_2019.png:
-    command: plot_sites(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2019, width = 1024, height = 512)
+  facebook/gage_age_2019.png:
+    command: plot_facebook(target_name, gage_melt, state_map = state_map, site_map = site_map, yr = 2019, width = 1200, height = 628)
 
   # --- Overall job --- #
 
   hash_table:
     command: tibble_hash_frames(
-      'twitter/gage_age_1900.png',
-      'twitter/gage_age_1901.png',
-      'twitter/gage_age_1902.png',
-      'twitter/gage_age_1903.png',
-      'twitter/gage_age_1904.png',
-      'twitter/gage_age_1905.png',
-      'twitter/gage_age_1906.png',
-      'twitter/gage_age_1907.png',
-      'twitter/gage_age_1908.png',
-      'twitter/gage_age_1909.png',
-      'twitter/gage_age_1910.png',
-      'twitter/gage_age_1911.png',
-      'twitter/gage_age_1912.png',
-      'twitter/gage_age_1913.png',
-      'twitter/gage_age_1914.png',
-      'twitter/gage_age_1915.png',
-      'twitter/gage_age_1916.png',
-      'twitter/gage_age_1917.png',
-      'twitter/gage_age_1918.png',
-      'twitter/gage_age_1919.png',
-      'twitter/gage_age_1920.png',
-      'twitter/gage_age_1921.png',
-      'twitter/gage_age_1922.png',
-      'twitter/gage_age_1923.png',
-      'twitter/gage_age_1924.png',
-      'twitter/gage_age_1925.png',
-      'twitter/gage_age_1926.png',
-      'twitter/gage_age_1927.png',
-      'twitter/gage_age_1928.png',
-      'twitter/gage_age_1929.png',
-      'twitter/gage_age_1930.png',
-      'twitter/gage_age_1931.png',
-      'twitter/gage_age_1932.png',
-      'twitter/gage_age_1933.png',
-      'twitter/gage_age_1934.png',
-      'twitter/gage_age_1935.png',
-      'twitter/gage_age_1936.png',
-      'twitter/gage_age_1937.png',
-      'twitter/gage_age_1938.png',
-      'twitter/gage_age_1939.png',
-      'twitter/gage_age_1940.png',
-      'twitter/gage_age_1941.png',
-      'twitter/gage_age_1942.png',
-      'twitter/gage_age_1943.png',
-      'twitter/gage_age_1944.png',
-      'twitter/gage_age_1945.png',
-      'twitter/gage_age_1946.png',
-      'twitter/gage_age_1947.png',
-      'twitter/gage_age_1948.png',
-      'twitter/gage_age_1949.png',
-      'twitter/gage_age_1950.png',
-      'twitter/gage_age_1951.png',
-      'twitter/gage_age_1952.png',
-      'twitter/gage_age_1953.png',
-      'twitter/gage_age_1954.png',
-      'twitter/gage_age_1955.png',
-      'twitter/gage_age_1956.png',
-      'twitter/gage_age_1957.png',
-      'twitter/gage_age_1958.png',
-      'twitter/gage_age_1959.png',
-      'twitter/gage_age_1960.png',
-      'twitter/gage_age_1961.png',
-      'twitter/gage_age_1962.png',
-      'twitter/gage_age_1963.png',
-      'twitter/gage_age_1964.png',
-      'twitter/gage_age_1965.png',
-      'twitter/gage_age_1966.png',
-      'twitter/gage_age_1967.png',
-      'twitter/gage_age_1968.png',
-      'twitter/gage_age_1969.png',
-      'twitter/gage_age_1970.png',
-      'twitter/gage_age_1971.png',
-      'twitter/gage_age_1972.png',
-      'twitter/gage_age_1973.png',
-      'twitter/gage_age_1974.png',
-      'twitter/gage_age_1975.png',
-      'twitter/gage_age_1976.png',
-      'twitter/gage_age_1977.png',
-      'twitter/gage_age_1978.png',
-      'twitter/gage_age_1979.png',
-      'twitter/gage_age_1980.png',
-      'twitter/gage_age_1981.png',
-      'twitter/gage_age_1982.png',
-      'twitter/gage_age_1983.png',
-      'twitter/gage_age_1984.png',
-      'twitter/gage_age_1985.png',
-      'twitter/gage_age_1986.png',
-      'twitter/gage_age_1987.png',
-      'twitter/gage_age_1988.png',
-      'twitter/gage_age_1989.png',
-      'twitter/gage_age_1990.png',
-      'twitter/gage_age_1991.png',
-      'twitter/gage_age_1992.png',
-      'twitter/gage_age_1993.png',
-      'twitter/gage_age_1994.png',
-      'twitter/gage_age_1995.png',
-      'twitter/gage_age_1996.png',
-      'twitter/gage_age_1997.png',
-      'twitter/gage_age_1998.png',
-      'twitter/gage_age_1999.png',
-      'twitter/gage_age_2000.png',
-      'twitter/gage_age_2001.png',
-      'twitter/gage_age_2002.png',
-      'twitter/gage_age_2003.png',
-      'twitter/gage_age_2004.png',
-      'twitter/gage_age_2005.png',
-      'twitter/gage_age_2006.png',
-      'twitter/gage_age_2007.png',
-      'twitter/gage_age_2008.png',
-      'twitter/gage_age_2009.png',
-      'twitter/gage_age_2010.png',
-      'twitter/gage_age_2011.png',
-      'twitter/gage_age_2012.png',
-      'twitter/gage_age_2013.png',
-      'twitter/gage_age_2014.png',
-      'twitter/gage_age_2015.png',
-      'twitter/gage_age_2016.png',
-      'twitter/gage_age_2017.png',
-      'twitter/gage_age_2018.png',
-      'twitter/gage_age_2019.png')
+      'facebook/gage_age_1889.png',
+      'facebook/gage_age_1890.png',
+      'facebook/gage_age_1891.png',
+      'facebook/gage_age_1892.png',
+      'facebook/gage_age_1893.png',
+      'facebook/gage_age_1894.png',
+      'facebook/gage_age_1895.png',
+      'facebook/gage_age_1896.png',
+      'facebook/gage_age_1897.png',
+      'facebook/gage_age_1898.png',
+      'facebook/gage_age_1899.png',
+      'facebook/gage_age_1900.png',
+      'facebook/gage_age_1901.png',
+      'facebook/gage_age_1902.png',
+      'facebook/gage_age_1903.png',
+      'facebook/gage_age_1904.png',
+      'facebook/gage_age_1905.png',
+      'facebook/gage_age_1906.png',
+      'facebook/gage_age_1907.png',
+      'facebook/gage_age_1908.png',
+      'facebook/gage_age_1909.png',
+      'facebook/gage_age_1910.png',
+      'facebook/gage_age_1911.png',
+      'facebook/gage_age_1912.png',
+      'facebook/gage_age_1913.png',
+      'facebook/gage_age_1914.png',
+      'facebook/gage_age_1915.png',
+      'facebook/gage_age_1916.png',
+      'facebook/gage_age_1917.png',
+      'facebook/gage_age_1918.png',
+      'facebook/gage_age_1919.png',
+      'facebook/gage_age_1920.png',
+      'facebook/gage_age_1921.png',
+      'facebook/gage_age_1922.png',
+      'facebook/gage_age_1923.png',
+      'facebook/gage_age_1924.png',
+      'facebook/gage_age_1925.png',
+      'facebook/gage_age_1926.png',
+      'facebook/gage_age_1927.png',
+      'facebook/gage_age_1928.png',
+      'facebook/gage_age_1929.png',
+      'facebook/gage_age_1930.png',
+      'facebook/gage_age_1931.png',
+      'facebook/gage_age_1932.png',
+      'facebook/gage_age_1933.png',
+      'facebook/gage_age_1934.png',
+      'facebook/gage_age_1935.png',
+      'facebook/gage_age_1936.png',
+      'facebook/gage_age_1937.png',
+      'facebook/gage_age_1938.png',
+      'facebook/gage_age_1939.png',
+      'facebook/gage_age_1940.png',
+      'facebook/gage_age_1941.png',
+      'facebook/gage_age_1942.png',
+      'facebook/gage_age_1943.png',
+      'facebook/gage_age_1944.png',
+      'facebook/gage_age_1945.png',
+      'facebook/gage_age_1946.png',
+      'facebook/gage_age_1947.png',
+      'facebook/gage_age_1948.png',
+      'facebook/gage_age_1949.png',
+      'facebook/gage_age_1950.png',
+      'facebook/gage_age_1951.png',
+      'facebook/gage_age_1952.png',
+      'facebook/gage_age_1953.png',
+      'facebook/gage_age_1954.png',
+      'facebook/gage_age_1955.png',
+      'facebook/gage_age_1956.png',
+      'facebook/gage_age_1957.png',
+      'facebook/gage_age_1958.png',
+      'facebook/gage_age_1959.png',
+      'facebook/gage_age_1960.png',
+      'facebook/gage_age_1961.png',
+      'facebook/gage_age_1962.png',
+      'facebook/gage_age_1963.png',
+      'facebook/gage_age_1964.png',
+      'facebook/gage_age_1965.png',
+      'facebook/gage_age_1966.png',
+      'facebook/gage_age_1967.png',
+      'facebook/gage_age_1968.png',
+      'facebook/gage_age_1969.png',
+      'facebook/gage_age_1970.png',
+      'facebook/gage_age_1971.png',
+      'facebook/gage_age_1972.png',
+      'facebook/gage_age_1973.png',
+      'facebook/gage_age_1974.png',
+      'facebook/gage_age_1975.png',
+      'facebook/gage_age_1976.png',
+      'facebook/gage_age_1977.png',
+      'facebook/gage_age_1978.png',
+      'facebook/gage_age_1979.png',
+      'facebook/gage_age_1980.png',
+      'facebook/gage_age_1981.png',
+      'facebook/gage_age_1982.png',
+      'facebook/gage_age_1983.png',
+      'facebook/gage_age_1984.png',
+      'facebook/gage_age_1985.png',
+      'facebook/gage_age_1986.png',
+      'facebook/gage_age_1987.png',
+      'facebook/gage_age_1988.png',
+      'facebook/gage_age_1989.png',
+      'facebook/gage_age_1990.png',
+      'facebook/gage_age_1991.png',
+      'facebook/gage_age_1992.png',
+      'facebook/gage_age_1993.png',
+      'facebook/gage_age_1994.png',
+      'facebook/gage_age_1995.png',
+      'facebook/gage_age_1996.png',
+      'facebook/gage_age_1997.png',
+      'facebook/gage_age_1998.png',
+      'facebook/gage_age_1999.png',
+      'facebook/gage_age_2000.png',
+      'facebook/gage_age_2001.png',
+      'facebook/gage_age_2002.png',
+      'facebook/gage_age_2003.png',
+      'facebook/gage_age_2004.png',
+      'facebook/gage_age_2005.png',
+      'facebook/gage_age_2006.png',
+      'facebook/gage_age_2007.png',
+      'facebook/gage_age_2008.png',
+      'facebook/gage_age_2009.png',
+      'facebook/gage_age_2010.png',
+      'facebook/gage_age_2011.png',
+      'facebook/gage_age_2012.png',
+      'facebook/gage_age_2013.png',
+      'facebook/gage_age_2014.png',
+      'facebook/gage_age_2015.png',
+      'facebook/gage_age_2016.png',
+      'facebook/gage_age_2017.png',
+      'facebook/gage_age_2018.png',
+      'facebook/gage_age_2019.png')
     
